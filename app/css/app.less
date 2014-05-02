@@ -1,0 +1,94 @@
+body {
+  background-image: url('../media/bg.jpg');
+  background-size: cover;
+}
+
+/*
+***********************
+* =header
+***********************
+*/
+
+header {
+  background-color: rgba(0,0,254,0.7);
+  height: 100px;
+  border-radius: 5px;
+}
+
+h1 {
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 8px;
+  color: #ff00ff;
+}
+
+#addPet {
+  float: right;
+  margin-top: 32px;
+  margin-right: 20px;
+}
+
+input, select, button {
+  border-radius: 10px;
+  font-size: 20px;
+  color: #ff00ff;
+  background-color: #8000ff;
+  border: 3px inset #ff00ff;
+}
+
+/*
+***********************
+* =pets
+***********************
+*/
+
+.pet {
+  display: inline-block;
+  border: 5px outset #ff00ff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgba(0,0,254,0.7);
+}
+
+.pet:nth-child(2n) {
+  background-color: rgba(128,0,255,0.7);
+  border: 5px outset #ff00ff;
+}
+
+.pet > img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/*
+***********************
+* =stats
+***********************
+*/
+
+.healthBar, .fullBar, .moodBar {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 100px;
+  height: 10px;
+  display: inline-block;
+}
+
+.health, .full, .mood {
+  height: 10px;
+  background-color: red;
+}
+
+.actions{
+  width: 45px;
+  height: 40px;
+  font-size: 12px;
+  border-radius: 20px;
+  background-color: #ff00ff;
+  color: #800000;
+  text-align: center;
+}

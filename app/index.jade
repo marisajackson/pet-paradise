@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Pet Paradise
+    link(href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css')
+    link(rel='stylesheet', href='./css/app.css')
+  body
+
+    header
+      h1 Pet Paradise
+      #addPet
+        select#species
+          option(value='dog.png') Dog
+          option(value='cat.png') Cat
+          option(value='hamster.png') Hamster
+        select#gender
+          option Male
+          option Female
+        input#name(type='text' placeholder='Name')
+        input#age(type='text' placeholder='Age')
+        button#add Add New Pet!
+    #pets
+
+    script(src='./js/vendor/traceur.js')
+    script(src='./js/vendor/experimental.js')
+    script(src='./js/vendor/jquery-2.1.0.js')
+    script(src='./js/vendor/lodash-2.4.1.js')
+    script(src='./js/vendor/moment-2.6.0.js')
+    script(src='./js/es6/database.js')
+    script(src='./js/es6/pet.js')
+    script(src='./js/es5/main.js')
+    script(src='./js/es6/main.js')
